@@ -3,58 +3,104 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Stephen's Portfolio</title>
+  <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    :root {
+      --primary: #00d1b2;
+      --background: #121212;
+      --text: #ffffff;
+      --card: #1f1f1f;
+      --hover: #00ffc3;
+    }
+    * {
       margin: 0;
       padding: 0;
-      background-color: #f0f0f5;
-      color: #333;
+      box-sizing: border-box;
     }
-    header, footer {
-      background-color: #333;
-      color: white;
-      padding: 1rem;
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: var(--background);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(90deg, #00d1b2, #00ffc3);
+      color: black;
       text-align: center;
+      padding: 2rem 1rem;
+    }
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2.5rem;
     }
     nav {
-      text-align: center;
-      margin: 1rem 0;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background-color: #1f1f1f;
+      padding: 1rem;
+      border-bottom: 2px solid var(--primary);
     }
     nav a {
-      margin: 0 1rem;
+      color: var(--text);
       text-decoration: none;
-      color: #333;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: var(--hover);
     }
     main {
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
-      background-color: white;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 1rem;
     }
     section {
+      background-color: var(--card);
+      padding: 2rem;
+      border-radius: 12px;
       margin-bottom: 2rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+      transition: transform 0.3s;
     }
-    h1, h2 {
-      color: #444;
+    section:hover {
+      transform: translateY(-5px);
+    }
+    h2 {
+      font-family: 'Orbitron', sans-serif;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+    ul li {
+      margin-bottom: 1rem;
     }
     iframe {
       width: 100%;
       height: 600px;
-      border: none;
+      border: 2px solid var(--primary);
+      border-radius: 8px;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #1f1f1f;
+      border-top: 2px solid var(--primary);
+      color: #aaa;
+    }
+    a {
+      color: var(--primary);
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Hi, I'm Stephen</h1>
-    <p>Welcome to my portfolio website!</p>
+    <h1>Hi, I'm Stephen Saber</h1>
+    <p>Current CSA student and former CSP student</p>
   </header>
-  
+
   <nav>
-    <a href="#about">About Me</a>
+    <a href="#about">About</a>
     <a href="#projects">Projects</a>
     <a href="#resume">Resume</a>
     <a href="#contact">Contact</a>
@@ -63,35 +109,34 @@
   <main>
     <section id="about">
       <h2>About Me</h2>
-      <p>I am a current CSA student who took Computer Science Principles last year, with a couple of work experiences in my past.
-          I am a Junior entering the summer of my Senior year, starting to explore and figure out colleges I am going to apply to.
-          I am a varsity basketball at Dover Sherborn Highschool, who plays golf on the side.
-      </p>
+      <p>I am a current CSA student who took Computer Science Principles last year, with a couple of work experiences in my past. 
+        I am a Junior entering the summer of my Senior year, starting to explore and figure out colleges I am going to apply to.
+        I am a varsity basketball at Dover Sherborn Highschool, who plays golf on the side.</p>
     </section>
 
     <section id="projects">
       <h2>Projects</h2>
       <ul>
-        <li><strong>Project 1:</strong> Java-based quiz app for CS review.</li>
-        <li><strong>Project 2:</strong> Simple HTML/CSS website made from scratch.</li>
-        <li><strong>Project 3:</strong> Python program that solves mazes using recursion.</li>
+        <li><strong>Quiz Master:</strong> A Java-based trivia game to test your CS knowledge.</li>
+        <li><strong>Portfolio Site:</strong> This site you're on, coded from scratch using HTML/CSS.</li>
+        <li><strong>Maze Solver:</strong> A Python recursive algorithm to escape randomly generated mazes.</li>
       </ul>
     </section>
 
     <section id="resume">
       <h2>Resume</h2>
-      <p>You can view or download my resume below:</p>
+      <p>View my resume below:</p>
       <iframe src="resume.pdf"></iframe>
     </section>
 
     <section id="contact">
       <h2>Contact</h2>
-      <p>Email me at: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+      <p>📧 <a href="mailto:your.email@example.com">your.email@example.com</a></p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Stephen Saber. All rights reserved.</p>
+    <p>&copy; 2025 Saber. All rights reserved.</p>
   </footer>
 </body>
 </html>
