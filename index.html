@@ -4,14 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     :root {
-      --primary: #ff5f6d; /* Bright coral pink */
-      --background: #121212;
-      --text: #ffffff;
-      --card: #1f1f1f;
-      --hover: #ffb347;
+      --primary: #1e88e5; /* Professional blue */
+      --secondary: #1565c0;
+      --background: #f5f5f5;
+      --text: #212121;
+      --card: #ffffff;
+      --hover: #0d47a1;
     }
     * {
       margin: 0;
@@ -19,37 +20,36 @@
       box-sizing: border-box;
     }
     body {
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Inter', sans-serif;
       background-color: var(--background);
       color: var(--text);
       line-height: 1.6;
     }
     header {
-      background: linear-gradient(90deg, var(--primary), var(--hover));
-      color: black;
+      background: var(--primary);
+      color: #fff;
       text-align: center;
       padding: 2rem 1rem;
     }
     header h1 {
-      font-family: 'Orbitron', sans-serif;
-      font-size: 2.5rem;
+      font-size: 2.75rem;
+      font-weight: 600;
     }
     nav {
       display: flex;
       justify-content: center;
       gap: 2rem;
-      background-color: #1f1f1f;
+      background-color: var(--secondary);
       padding: 1rem;
-      border-bottom: 2px solid var(--primary);
     }
     nav a {
-      color: var(--text);
+      color: #fff;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 500;
       transition: color 0.3s;
     }
     nav a:hover {
-      color: var(--hover);
+      color: #bbdefb;
     }
     main {
       max-width: 1000px;
@@ -59,20 +59,18 @@
     section {
       background-color: var(--card);
       padding: 2rem;
-      border-radius: 12px;
+      border-radius: 8px;
       margin-bottom: 2rem;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.5);
-      transition: transform 0.3s, background-color 0.3s;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: box-shadow 0.3s;
     }
     section:hover {
-      transform: scale(1.02);
-      background-color: #292929;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
     }
     h2 {
-      font-family: 'Orbitron', sans-serif;
       color: var(--primary);
       margin-bottom: 1rem;
-      font-size: 2rem;
+      font-size: 1.75rem;
     }
     ul li {
       margin-bottom: 1rem;
@@ -80,15 +78,14 @@
     iframe {
       width: 100%;
       height: 600px;
-      border: 2px solid var(--primary);
-      border-radius: 8px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
     }
     footer {
       text-align: center;
       padding: 1rem;
-      background-color: #1f1f1f;
-      border-top: 2px solid var(--primary);
-      color: #aaa;
+      background-color: var(--secondary);
+      color: #fff;
     }
     a {
       color: var(--primary);
@@ -98,7 +95,7 @@
 <body>
   <header>
     <h1>Hi, I'm [Your Name]</h1>
-    <p>Creative Developer | Problem Solver | Lifelong Learner</p>
+    <p>Aspiring Software Developer | Problem Solver | Tech Enthusiast</p>
   </header>
 
   <nav>
@@ -110,8 +107,8 @@
 
   <main>
     <section>
-      <h2>Welcome!</h2>
-      <p>This is the homepage of my portfolio. Use the navigation bar to explore who I am, my work, and how to get in touch. Thanks for visiting!</p>
+      <h2>Welcome</h2>
+      <p>Welcome to my professional portfolio. Here, you'll find information about my background, projects, resume, and how to contact me. I'm passionate about technology and always eager to learn and grow.</p>
     </section>
   </main>
 
@@ -120,3 +117,4 @@
   </footer>
 </body>
 </html>
+
