@@ -7,11 +7,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto&display=swap" rel="stylesheet">
   <style>
     :root {
-      --primary: #00d1b2;
+      --primary: #ff5f6d; /* Bright coral pink */
       --background: #121212;
       --text: #ffffff;
       --card: #1f1f1f;
-      --hover: #00ffc3;
+      --hover: #ffb347;
     }
     * {
       margin: 0;
@@ -25,7 +25,7 @@
       line-height: 1.6;
     }
     header {
-      background: linear-gradient(90deg, #00d1b2, #00ffc3);
+      background: linear-gradient(90deg, var(--primary), var(--hover));
       color: black;
       text-align: center;
       padding: 2rem 1rem;
@@ -62,15 +62,17 @@
       border-radius: 12px;
       margin-bottom: 2rem;
       box-shadow: 0 5px 15px rgba(0,0,0,0.5);
-      transition: transform 0.3s;
+      transition: transform 0.3s, background-color 0.3s;
     }
     section:hover {
-      transform: translateY(-5px);
+      transform: scale(1.02);
+      background-color: #292929;
     }
     h2 {
       font-family: 'Orbitron', sans-serif;
       color: var(--primary);
       margin-bottom: 1rem;
+      font-size: 2rem;
     }
     ul li {
       margin-bottom: 1rem;
@@ -95,48 +97,26 @@
 </head>
 <body>
   <header>
-    <h1>Hi, I'm Stephen Saber</h1>
-    <p>Current CSA student and former CSP student</p>
+    <h1>Hi, I'm [Your Name]</h1>
+    <p>Creative Developer | Problem Solver | Lifelong Learner</p>
   </header>
 
   <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#resume">Resume</a>
-    <a href="#contact">Contact</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="resume.html">Resume</a>
+    <a href="contact.html">Contact</a>
   </nav>
 
   <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I am a current CSA student who took Computer Science Principles last year, with a couple of work experiences in my past. 
-        I am a Junior entering the summer of my Senior year, starting to explore and figure out colleges I am going to apply to.
-        I am a varsity basketball at Dover Sherborn Highschool, who plays golf on the side.</p>
-    </section>
-
-    <section id="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>Quiz Master:</strong> A Java-based trivia game to test your CS knowledge.</li>
-        <li><strong>Portfolio Site:</strong> This site you're on, coded from scratch using HTML/CSS.</li>
-        <li><strong>Maze Solver:</strong> A Python recursive algorithm to escape randomly generated mazes.</li>
-      </ul>
-    </section>
-
-    <section id="resume">
-      <h2>Resume</h2>
-      <p>View my resume below:</p>
-      <iframe src="resume.pdf"></iframe>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>📧 <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+    <section>
+      <h2>Welcome!</h2>
+      <p>This is the homepage of my portfolio. Use the navigation bar to explore who I am, my work, and how to get in touch. Thanks for visiting!</p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Saber. All rights reserved.</p>
+    <p>&copy; 2025 [Your Name]. All rights reserved.</p>
   </footer>
 </body>
 </html>
