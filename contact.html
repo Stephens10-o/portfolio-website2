@@ -7,9 +7,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     :root {
-      --primary: #4dd0e1;
-      --secondary: #006064;
-      --background: #f0f8f9;
+      --primary: #ff6f61; /* Coral Red */
+      --secondary: #37474f; /* Dark Blue Gray */
+      --background: #fff8f4; /* Light Cream */
       --text: #1a1a1a;
       --card: #ffffff;
     }
@@ -36,9 +36,10 @@
       color: white;
       text-decoration: none;
       font-weight: 500;
+      transition: color 0.3s;
     }
     nav a:hover {
-      text-decoration: underline;
+      color: var(--primary);
     }
     main {
       max-width: 1000px;
@@ -49,13 +50,17 @@
       background-color: var(--card);
       padding: 2rem;
       border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
     h2 {
-      color: var(--secondary);
+      color: var(--primary);
     }
     a {
       color: var(--secondary);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
