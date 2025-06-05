@@ -1,55 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     :root {
-      --primary: #4dd0e1; /* Cool teal */
-      --secondary: #006064; /* Deep cyan */
-      --background: #f0f8f9;
+      --primary: #ff6f61;
+      --secondary: #37474f;
+      --background: #fff8f4;
       --text: #1a1a1a;
       --card: #ffffff;
-      --hover: #00838f;
-    }
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
     }
     body {
       font-family: 'Inter', sans-serif;
       background-color: var(--background);
       color: var(--text);
-      line-height: 1.6;
+      margin: 0;
     }
-    header {
-      background: var(--primary);
-      color: #fff;
+    header, footer {
+      background-color: var(--primary);
+      color: white;
       text-align: center;
-      padding: 2rem 1rem;
-    }
-    header h1 {
-      font-size: 2.75rem;
-      font-weight: 600;
+      padding: 1rem;
     }
     nav {
+      background-color: var(--secondary);
       display: flex;
       justify-content: center;
       gap: 2rem;
-      background-color: var(--secondary);
       padding: 1rem;
     }
     nav a {
-      color: #fff;
+      color: white;
       text-decoration: none;
       font-weight: 500;
-      transition: color 0.3s;
     }
     nav a:hover {
-      color: #b2ebf2;
+      color: var(--primary);
     }
     main {
       max-width: 1000px;
@@ -60,65 +49,55 @@
       background-color: var(--card);
       padding: 2rem;
       border-radius: 8px;
-      margin-bottom: 2rem;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      transition: box-shadow 0.3s;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 2rem;
     }
-    section:hover {
-      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    .profile-pic {
+      flex: 0 0 200px;
+      height: 200px;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    }
+    .profile-pic img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .about-text {
+      flex: 1;
     }
     h2 {
-      color: var(--secondary);
-      margin-bottom: 1rem;
-      font-size: 1.75rem;
-    }
-    ul li {
-      margin-bottom: 1rem;
-    }
-    iframe {
-      width: 100%;
-      height: 600px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: var(--secondary);
-      color: #fff;
-    }
-    a {
       color: var(--primary);
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Hi, I'm [Your Name]</h1>
-    <p>Aspiring Software Developer | Problem Solver | Tech Enthusiast</p>
+    <h1>Welcome to My Portfolio</h1>
   </header>
-
   <nav>
     <a href="index.html">Home</a>
     <a href="projects.html">Projects</a>
     <a href="resume.html">Resume</a>
     <a href="contact.html">Contact</a>
   </nav>
-
   <main>
     <section>
-      <h2>About Me</h2>
-      <p>Hello! I'm a computer science student with a passion for developing useful and creative applications. I enjoy solving real-world problems using code and continuously strive to improve my skills in frontend and backend development. I'm familiar with languages such as Java, Python, and HTML/CSS, and I'm currently learning JavaScript and React.</p>
-    </section>
-
-    <section>
-      <h2>Welcome</h2>
-      <p>Welcome to my portfolio! Here, you can explore some of the projects I've worked on, view my resume, and get in touch with me. I'm excited to share my journey with you.</p>
+      <div class="profile-pic">
+        <img src="your-photo.jpg" alt="Your Photo">
+      </div>
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>Hi! I'm [Your Name], a passionate student exploring computer science, design, and technology. Welcome to my digital portfolio. Here, you can learn more about my work, experiences, and future goals.</p>
+      </div>
     </section>
   </main>
-
   <footer>
-    <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+    <p>&copy; 2025 [Your Name]</p>
   </footer>
 </body>
 </html>
