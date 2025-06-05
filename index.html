@@ -1,44 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resume</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     :root {
-      --primary: #4dd0e1;
-      --secondary: #006064;
+      --primary: #4dd0e1; /* Cool teal */
+      --secondary: #006064; /* Deep cyan */
       --background: #f0f8f9;
       --text: #1a1a1a;
       --card: #ffffff;
+      --hover: #00838f;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
     body {
       font-family: 'Inter', sans-serif;
       background-color: var(--background);
       color: var(--text);
-      margin: 0;
+      line-height: 1.6;
     }
-    header, footer {
-      background-color: var(--primary);
-      color: white;
+    header {
+      background: var(--primary);
+      color: #fff;
       text-align: center;
-      padding: 1rem;
+      padding: 2rem 1rem;
+    }
+    header h1 {
+      font-size: 2.75rem;
+      font-weight: 600;
     }
     nav {
-      background-color: var(--secondary);
       display: flex;
       justify-content: center;
       gap: 2rem;
+      background-color: var(--secondary);
       padding: 1rem;
     }
     nav a {
-      color: white;
+      color: #fff;
       text-decoration: none;
       font-weight: 500;
+      transition: color 0.3s;
     }
     nav a:hover {
-      text-decoration: underline;
+      color: #b2ebf2;
     }
     main {
       max-width: 1000px;
@@ -49,45 +60,65 @@
       background-color: var(--card);
       padding: 2rem;
       border-radius: 8px;
+      margin-bottom: 2rem;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: box-shadow 0.3s;
+    }
+    section:hover {
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
     }
     h2 {
       color: var(--secondary);
+      margin-bottom: 1rem;
+      font-size: 1.75rem;
+    }
+    ul li {
+      margin-bottom: 1rem;
     }
     iframe {
       width: 100%;
       height: 600px;
-      border: none;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: var(--secondary);
+      color: #fff;
+    }
+    a {
+      color: var(--primary);
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>My Resume</h1>
+    <h1>Hi, I'm [Your Name]</h1>
+    <p>Aspiring Software Developer | Problem Solver | Tech Enthusiast</p>
   </header>
+
   <nav>
     <a href="index.html">Home</a>
     <a href="projects.html">Projects</a>
     <a href="resume.html">Resume</a>
     <a href="contact.html">Contact</a>
   </nav>
+
   <main>
     <section>
-      <h2>Embedded Resume</h2>
-      <p>Below is a space to embed your PDF resume. Replace the URL with your file's link or upload it locally.</p>
-      <iframe src="your-resume.pdf"></iframe>
+      <h2>About Me</h2>
+      <p>Hello! I'm a computer science student with a passion for developing useful and creative applications. I enjoy solving real-world problems using code and continuously strive to improve my skills in frontend and backend development. I'm familiar with languages such as Java, Python, and HTML/CSS, and I'm currently learning JavaScript and React.</p>
     </section>
+
     <section>
-      <h2>Experience</h2>
-      <p>Write a summary of your work or internship experience here.</p>
-    </section>
-    <section>
-      <h2>Skills</h2>
-      <p>Add your technical and soft skills here.</p>
+      <h2>Welcome</h2>
+      <p>Welcome to my portfolio! Here, you can explore some of the projects I've worked on, view my resume, and get in touch with me. I'm excited to share my journey with you.</p>
     </section>
   </main>
+
   <footer>
-    <p>&copy; 2025 [Your Name]</p>
+    <p>&copy; 2025 [Your Name]. All rights reserved.</p>
   </footer>
 </body>
 </html>
